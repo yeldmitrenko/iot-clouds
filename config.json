@@ -1,0 +1,5 @@
+{
+        "KinesisDataStreamName": "cloud-lab-2-input-stream",
+        "Region": "eu-west-3",
+        "Frequency": 0.25
+}
