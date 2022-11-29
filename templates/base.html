@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - FlaskApp</title>
+    <style>
+        nav a {
+            color: black;
+            font-size: 3em;
+            margin-left: 100px;
+            text-decoration: black;
+            font-family: "Times New Roman", serif;
+        }
+    </style>
+</head>
+<body style="background-color: white">
+    <nav style="align-content: center; justify-content: center; margin: 0 0 0 25%">
+        <a href="{{ url_for('hello_world') }}">Flask App</a>
+        <a href="{{ url_for('login') }}">Login</a>
+    </nav>
+    <hr>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+
+</body>
+</html>

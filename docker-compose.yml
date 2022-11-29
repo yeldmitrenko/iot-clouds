@@ -1,0 +1,10 @@
+version: '2.8'
+services:
+    lab4-flask:
+        build: .
+        image: lab4-flask-app
+        container_name: lab4-flask
+        ports:
+            - "5000:5000"
+        volumes:
+            -   .:/code

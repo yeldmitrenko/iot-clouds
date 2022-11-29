@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="font-family: 'Times New Roman',serif; text-align: center;
+            background-color: indianred">{% block title %} Oops, try again! {% endblock %}</h1>
+    <h3>Password is incorrect</h3>
+    <h3>{{ utc_dt }}</h3>
+{% endblock %}
