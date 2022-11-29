@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="margin: 0 0 0 7%">{% block title %} Try it out {% endblock %}</h1>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjq8zJTmjUBUUVr0k3EPI13obVsJaBuB_7pA&usqp=CAU"
+            style="width:300px;height:200px;margin: 20px">
+
+    <form action="{{ url_for("login")}}" method="post">
+        <label for="password" style="font-family: 'Times New Roman',serif;
+                font-size: 20px; margin: 50px 10px">Password:</label>
+        <input type="text" id="password" name="fpassword" placeholder="enter 4-num password" style="width: 20%;
+                margin: 8px 10px; box-sizing: border-box;">
+        <button type="submit" style="background-color: whitesmoke; border: none; font-family: 'Times New Roman',serif;
+                padding: 7px 12px; text-align: center; font-weight: bold; text-decoration: none;border-radius: 12px;">Submit</button>
+    </form>
+{% endblock %}
